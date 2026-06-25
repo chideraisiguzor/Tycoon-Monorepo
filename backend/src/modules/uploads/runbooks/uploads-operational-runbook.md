@@ -46,7 +46,7 @@ Client Upload -> Validation -> Virus Scan -> Storage -> Signed URL Generation
 | `tycoon_uploads_request_duration_seconds` | `route`, `outcome` | Histogram of handler duration. |
 | `tycoon_uploads_multer_errors_total` | `code` | Multer limit errors (`LIMIT_FILE_SIZE`, etc.). |
 | `tycoon_uploads_virus_scan_total` | `outcome` | `skipped`, `clean`, `infected`, `error`. |
-
+it 
 ### Validation and Security Checks
 - Query validation for signed URLs and download tokens is handled by `UploadValidationPipe`.
 - Validation errors are mapped through `UploadsErrorMapperService` and returned as `400 Bad Request`.
